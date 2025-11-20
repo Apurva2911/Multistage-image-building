@@ -1,9 +1,9 @@
-#STAGE  1 BUILD
-FROM python:latest
+# stage build
+FROM python:latest 
 WORKDIR /app
-COPY helloworld.py /app/
-RUN echo "Stage build completed"
+COPY helloworld.py .
+RUN echo "stage build completed"
 
-#Stage 2 running 
-CMD ["python", "helloworld.py"]
-RUN echo "Stage running completed"
+# stage run
+CMD ["python","helloworld.py"]
+RUN echo "run stage completed"
